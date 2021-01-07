@@ -1,27 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--
+ - File              : index.html
+ - Author            : Marcos Horro <marcos.horro@udc.gal>
+ - Last Modified Date: Mar 18 Set 2018 15:46:32 CEST
+-->
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Página personal Marcos Horro - Grupo de Arquitectura de Computadores (GAC)">
+    <meta name="author" content="Grupo de Arquitectura de Computadores">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Arif Usta</title>
 
-    <title>Hello, world!</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menucollapse.js"></script>
+    <script type="text/javascript" src="js/arrow78.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
   </head>
+
   <body>
-    <h1>Hello, world!</h1>
+    <!-- header -->
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md fixed-top bg-dark bg-udc">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i></button>
+    		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">About Me<span class="sr-only">(current)</span></a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#publications">Publications</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    	</nav>
+    </header>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Begin page content -->
+    <main role="main" class="container">
+    <div class="row">
+      <div class="col-4 mx-auto d-block">
+        <div class="row mt-5 mx-auto d-block text-center">
+          <img src="img/profileph.jpeg" class="img-fluid rounded-circle mb-3" alt="Profile picture">
+          <h4>Arif Usta</h4>
+          <p class="lead">PhD Candidate</p>
+          <p class="font-weight-light">Bilkent University<br>Department of Computer Engineering</p>
+        </div>
+        <hr>
+        <div class="row mx-auto d-block">
+        <p class="lead text-center "><a href="mailto:marcos.horro@udc.gal"><i class="far fa-envelope"></i></a> arif.usta [at] bilkent.edu.tr</p>
+        <ul class="social-icons text-center">
+          	<li><a class="scholar" href="https://scholar.google.com/citations?user=TeWHsu8AAAAJ&hl=en" title="Scholar">Scholar</a></li>
+          	<li><a class="linkedin" href="https://www.linkedin.com/in/arif-usta/" title="Linkedin">LinkedIn</a></li>
+        </ul>
+        <hr>
+        <p class="text-center font-weight-light">
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      	<i class="far fa-user-circle"></i> <a href="http://cs.bilkent.edu.tr/~arif.usta/CV.pdf" alt="CV">Interactive CV</a><br>
+        </p>
+        <hr>
+      </div>
+      </div>
+      <div class="col-8">
+        <section id="projects" class="mt-5">
+          <h3 class="display-5">About Me</h3><hr>
+<div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <!--<h2>Welcome!</h2>-->
+                    
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+                        
+                        <p class="lead text-justify">
+                        I am a Ph.D candidate in Computer Engineering Department at <a target="_blank" href="http://www.cs.bilkent.edu.tr/">"Bilkent University"</a>, in Turkey. I have been working with <a target="_blank" href="http://www.cs.bilkent.edu.tr/~oulusoy/">"Prof. Özgür Ulusoy"</a> for research projects sponsored by TUBITAK (Scientific and Technical Research Council of Turkey). I received my BS and MS in computer science in 2012 and 2015 respectively. My research interests lie in the field of data management and search engines; specifically relating to the application of deep learning and nlp techniques for user friendly information retrieval interfaces. 
+                        
+                        </p>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+          <section  name="publications" id="publications">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        
+                        <h2>Publications</h2>
+                        <ul class="timelinelist">
+                            <li><span class="badge badge-success">PVLDB'21</span> Arif Usta, Akifhan Karakayali, and Özgür Ulusoy. <a target="_blank" href="#"><em>DBTagger: Multi-Task Learning for Keyword Mapping in NLIDBs Using Bi-Directional Recurrent Neural Networks</em></a>, Proceedings of the <b>VLDB Endowment (PVLDB'21)</b>. <font color="red">(accepted!)</font></li>
+                            </li>
+                        <li><span class="badge badge-success">IEEE TLT</span> Arif Usta, Ismail S. Altingovde, Rifat Ozcan, and Özgür Ulusoy. <a target="_blank" href="#">Learning to Rank for Educational Search Engines for K12 Students</a>, <b>IEEE Transactions on Learning Technologies (2021)</b>. <font color="red">(on revision!)</font></li>
+                            </li>
+                          <li><span class="badge badge-success">TPDL'19</span> Arif Usta, Ismail S. Altingovde, Rifat Ozcan, and Özgür Ulusoy. <a target="_blank" href="https://link.springer.com/chapter/10.1007%2F978-3-030-30760-8_43">"Re-finding Behaviour in Educational Search"</a> Proceedings of the <b>23rd International Conference on Theory and Practice of Digital Libraries (TPDL'19)</b>. </li>
+                        
+                          <li><span class="badge badge-success">ACM SIGMOD'18</span> Fuat Basik, Benjamin Hättasch, Amir Ilkhechi, Arif Usta, Shekar Ramaswamy, Prasetya Utama, Nathaniel Weir, Carsten Binnig, Ugur Cetintemel. <a target="_blank" href="https://dl.acm.org/doi/10.1145/3183713.3193562">"DBPal: A Learned NL-Interface for Databases"</a>Proceedings of the <b>2018 International Conference on Management of Data (SIGMOD'18)</b>. </li>
+                            
+                        <li><span class="badge badge-success">BIRTE@VLDB '17</span> Carsten Binnig, Fuat Basık, Benedetto Buratti, Ugur Cetintemel, Yeounoh Chung, Andrew Crotty, Cyrus Cousins, Dylan Ebert, Philipp Eichmann, Alex Galakatos, Benjamin Hättasch, Amir Ilkhechi, Tim Kraska, Zeyuan Shang, Isabella Tromba, Arif Usta, Prasetya Utama, Eli Upfal, Linnan Wang, Nathaniel Weir, Robert Zeleznik, Emanuel Zgraggen. <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-24124-7_11">"Towards Interactive Data Exploration"</a><b>2017 International Workshop on Real-Time Business Intelligence and Analytics</b>. </li>
+                        
+                      <li><span class="badge badge-success">ACM SIGIR'14</span> Arif Usta, Ismail S. Altingovde, Rifat Ozcan, and Özgür Ulusoy. <a target="_blank" href="https://link.springer.com/chapter/10.1007%2F978-3-030-30760-8_43">"How k-12 students search for learning? analysis of an educational search engine log"</a> Proceedings of the <b>37th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR’14)</b>. </li>
+                         
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
+ 
+      </div>
+    </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"><i class="fas fa-university"></i> © 2020 Arif Usta.</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bibtex.js"></script>
+
   </body>
 </html>
