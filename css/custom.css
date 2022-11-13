@@ -116,10 +116,14 @@ div.bibinfo pre { clear:both; }
 }
 
 .display-5{font-size:2rem;font-weight:300;line-height:1.2}
-.display-6{font-size:1.4rem;font-weight:300;line-height:1.2}
+.display-6{font-size:1.2rem;font-weight:300;line-height:1.2}
 .navbar-toggler {
   text-align: center;
 
+}
+
+main { 
+  margin-top: 0 
 }
 
 .fa-bars {
@@ -184,16 +188,22 @@ ul.clist {
     z-index: 10;
 }
 ul.clist > li {
-    margin: 20px 0;
-    padding-left: 20px;
+    margin: 0px 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    line-height: normal;
+    font-size: medium;
 }
+
+/*
 ul.clist > li:before {
     content: ' ';
     background: white;
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #e10879;
+    border: 3px solid #5bc0de;
     left: 20px;
     width: 20px;
     height: 20px;
@@ -219,8 +229,12 @@ ul.timelinelist:before {
     z-index: 400;
 }
 ul.timelinelist > li {
-    margin: 20px 0;
-    padding-left: 20px;
+    margin: 0px 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    line-height: normal;
+    font-size: medium;
 }
 ul.timelinelist > li:before {
     content: ' ';
@@ -254,7 +268,7 @@ ul.timelinelist > li:before {
     }
 
     .timeline > li {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         position: relative;
     }
 

@@ -12,7 +12,7 @@
     <title>Arif Usta</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
@@ -37,10 +37,16 @@
     		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#projects">About Me<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
               </li>
-                <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" href="#publications">Publications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#profServices">Professional Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#teaching">Teaching</a>
               </li>
             </ul>
           </div>
@@ -51,7 +57,7 @@
     <!-- Begin page content -->
     <main role="main" class="container">
     <div class="row">
-      <div class="col-4 mx-auto d-block">
+      <div class="col-3 mx-auto d-block">
         <div class="row mt-5 mx-auto d-block text-center">
           <img src="img/profilePhotoCan2.jpeg" class="img-fluid rounded-circle mb-3" alt="Profile picture">
           <h4>Arif Usta</h4>
@@ -73,32 +79,27 @@
         <hr>
       </div>
       </div>
-      <div class="col-8">
-        <section id="projects" class="mt-5">
-          <h3 class="display-5">About Me</h3><hr>
+      <div class="col-9">
+        <section id="home" class="mt-5">
 <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    <!--<h2>Welcome!</h2>-->
+                <div style="text-align: left; margin-top:0px" class="col-md-12">
                     
                     <b class="noshow" style="display:none;" id="tab-1">
                         <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
                     </b>
                     
                     <div class="allshow" style="display:none;" id="tab-intro-content">
-                        <hr class="star-primary">
                         
-                        <p class="lead text-justify">
+                        <p class="lead text-justify" style="font-size: medium;">
                         I am a Post-Doctoral Fellow in <a target="_blank" href="https://uwaterloo.ca/data-systems-group//"> 
                           Data Systems Research Group</a> at University of Waterloo. I am working with <a target="_blank" href="https://cs.uwaterloo.ca/~ssalihog/">
                             Prof. Semih Salihoglu</a>. I have received both my MSc and Ph.D degrees in Computer Science from Bilkent University in Turkey. I was supervised by 
                           <a target="_blank" href="http://www.cs.bilkent.edu.tr/~oulusoy/">
                             Prof. Özgür Ulusoy</a> in research projects sponsored by TUBITAK (Scientific and Technical Research Council of Turkey) during my Ph.D. 
                             My research interests lie in the field of data management and search engines; 
-                            specifically relating to the application of deep learning and nlp techniques for user friendly information retrieval interfaces. 
-                        
+                            specifically relating to the application of deep learning and nlp techniques for user friendly information retrieval interfaces.  
                         </p>
-                        
-                        
+                        <p style="color: #2e6da4;"> <strong><em>I am on the job market this year for faculty and research scientist positions. Reach out to me if you are hiring! </em></strong></p>
                     </div>
                     
                 </div>
@@ -109,37 +110,88 @@
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
                     
-                    <b class="noshow" style="display:none;" id="tab-3">
+                    <b class="noshow" style="display:none;" id="tab-2">
                         <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
                     </b>
                     <div class="allshow" style="display:none;" id="tab-publications-content">
                         <hr class="star-primary">
                         
-                        <h2>Publications</h2>
+                        <h4>Publications</h4>
                         <ul class="timelinelist">
-                          <li><span class="badge badge-success">2022</span> Arif Usta, and Özgür Ulusoy. <a target="_blank" href="https://dl.acm.org/doi/10.14778/3446095.3446103">
-                            <em>SQL Query Recommendation Using Graph Neural Networks</em></a> <p style="color:red;">On Preparation</p></li>
-                        </li>
-                          <li><span class="badge badge-success">2022</span> Arif Usta, Akifhan Karakayali, and Özgür Ulusoy. <a target="_blank" href="https://dl.acm.org/doi/10.14778/3446095.3446103">
-                            <em>Explainable Natural Languge Interface to Databases Using Keyword Mappings and LIME</em></a> <p style="color:red;">On Submission</p></li>
-                        </li>
-                            <li><span class="badge badge-success">VLDB'21</span> Arif Usta, Akifhan Karakayali, and Özgür Ulusoy. <a target="_blank" href="https://dl.acm.org/doi/10.14778/3446095.3446103"><em>DBTagger: Multi-Task Learning for Keyword Mapping in NLIDBs Using Bi-Directional Recurrent Neural Networks</em></a>, Proceedings of the <b>VLDB Endowment (PVLDB'21)</b>.</li>
-                            </li>
-                        <li><span class="badge badge-success">IEEE TLT</span> Arif Usta, Ismail S. Altingovde, Rifat Ozcan, and Özgür Ulusoy. <a target="_blank" href="https://ieeexplore.ieee.org/document/9416797">Learning to Rank for Educational Search Engines</a>, <b>IEEE Transactions on Learning Technologies (2021)</b>.</li>
-                            </li>
-                          <li><span class="badge badge-success">TPDL'19</span> Arif Usta, Ismail S. Altingovde, Rifat Ozcan, and Özgür Ulusoy. <a target="_blank" href="https://link.springer.com/chapter/10.1007%2F978-3-030-30760-8_43">"Re-finding Behaviour in Educational Search"</a> Proceedings of the <b>23rd International Conference on Theory and Practice of Digital Libraries (TPDL'19)</b>. </li>
-                        
-                          <li><span class="badge badge-success">ACM SIGMOD'18</span> Fuat Basik, Benjamin Hättasch, Amir Ilkhechi, Arif Usta, Shekar Ramaswamy, Prasetya Utama, Nathaniel Weir, Carsten Binnig, Ugur Cetintemel. <a target="_blank" href="https://dl.acm.org/doi/10.1145/3183713.3193562">"DBPal: A Learned NL-Interface for Databases"</a>Proceedings of the <b>2018 International Conference on Management of Data (SIGMOD'18)</b>. </li>
+                          <li><span class="badge badge-danger">2022</span> Arif Usta, and Özgür Ulusoy. <a target="_blank" href="">
+                            <em>SQL Query Recommendation Using Graph Neural Networks</em></a> <p style="color:red; display:inline; margin-bottom: 0px;">On Preparation</p></li>
+
+                          <li><span class="badge badge-warning">2022</span> Arif Usta, Akifhan Karakayali, and Özgür Ulusoy. <a target="_blank" href="https://arxiv.org/abs/2210.03768">
+                            <em>xDBTagger: Explainable Natural Language Interface to Databases Using Keyword Mappings and Schema Graph</em></a> <p style="color:red; display:inline; margin-bottom: 0px;">On Submission</p></li>
+
+                          <li><span class="badge badge-success">VLDB '21</span> Arif Usta, Akifhan Karakayali, and Özgür Ulusoy. <a target="_blank" href="https://dl.acm.org/doi/10.14778/3446095.3446103"><em>DBTagger: Multi-Task Learning for Keyword Mapping in NLIDBs Using Bi-Directional Recurrent Neural Networks</em></a>, Proceedings of the <b>VLDB Endowment (PVLDB'21)</b>.</li>
+                          <li><span class="badge badge-success">IEEE TLT '21</span> Arif Usta, Ismail S. Altingovde, Rifat Ozcan, and Özgür Ulusoy. <a target="_blank" href="https://ieeexplore.ieee.org/document/9416797">Learning to Rank for Educational Search Engines</a>, <b>IEEE Transactions on Learning Technologies (2021)</b>.</li>
+                          <li><span class="badge badge-success">TPDL '19</span> Arif Usta, Ismail S. Altingovde, Rifat Ozcan, and Özgür Ulusoy. <a target="_blank" href="https://link.springer.com/chapter/10.1007%2F978-3-030-30760-8_43">"Re-finding Behaviour in Educational Search"</a> Proceedings of the <b>23rd International Conference on Theory and Practice of Digital Libraries (TPDL'19)</b>. </li>   
+                          <li><span class="badge badge-success">ACM SIGMOD '18</span> Fuat Basik, Benjamin Hättasch, Amir Ilkhechi, Arif Usta, Shekar Ramaswamy, Prasetya Utama, Nathaniel Weir, Carsten Binnig, Ugur Cetintemel. <a target="_blank" href="https://dl.acm.org/doi/10.1145/3183713.3193562">"DBPal: A Learned NL-Interface for Databases"</a>Proceedings of the <b>2018 International Conference on Management of Data (SIGMOD'18)</b>. </li>
                             
-                        <li><span class="badge badge-success">BIRTE@VLDB '17</span> Carsten Binnig, Fuat Basık, Benedetto Buratti, Ugur Cetintemel, Yeounoh Chung, Andrew Crotty, Cyrus Cousins, Dylan Ebert, Philipp Eichmann, Alex Galakatos, Benjamin Hättasch, Amir Ilkhechi, Tim Kraska, Zeyuan Shang, Isabella Tromba, Arif Usta, Prasetya Utama, Eli Upfal, Linnan Wang, Nathaniel Weir, Robert Zeleznik, Emanuel Zgraggen. <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-24124-7_11">"Towards Interactive Data Exploration"</a><b>2017 International Workshop on Real-Time Business Intelligence and Analytics</b>. </li>
+                          <li><span class="badge badge-success">BIRTE@VLDB '17</span> Carsten Binnig, Fuat Basık, Benedetto Buratti, Ugur Cetintemel, Yeounoh Chung, Andrew Crotty, Cyrus Cousins, Dylan Ebert, Philipp Eichmann, Alex Galakatos, Benjamin Hättasch, Amir Ilkhechi, Tim Kraska, Zeyuan Shang, Isabella Tromba, Arif Usta, Prasetya Utama, Eli Upfal, Linnan Wang, Nathaniel Weir, Robert Zeleznik, Emanuel Zgraggen. <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-24124-7_11">"Towards Interactive Data Exploration"</a><b>2017 International Workshop on Real-Time Business Intelligence and Analytics</b>. </li>
                         
-                      <li><span class="badge badge-success">ACM SIGIR'14</span> Arif Usta, Ismail S. Altingovde, Rifat Ozcan, and Özgür Ulusoy. <a target="_blank" href="https://dl.acm.org/doi/10.1145/2600428.2609532">"How k-12 students search for learning? analysis of an educational search engine log"</a> Proceedings of the <b>37th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR’14)</b>. </li>
+                          <li><span class="badge badge-success">ACM SIGIR '14</span> Arif Usta, Ismail S. Altingovde, Rifat Ozcan, and Özgür Ulusoy. <a target="_blank" href="https://dl.acm.org/doi/10.1145/2600428.2609532">"How k-12 students search for learning? analysis of an educational search engine log"</a> Proceedings of the <b>37th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR’14)</b>. </li>
                          
-                            </ul>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section  name="profServices" id="profServices">
+          <div class="container lead">
+              <div style="text-align: left; margin-top:10px" class="col-md-12">
+                  
+                  <b class="noshow" style="display:none;" id="tab-3">
+                      <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-proServices-content').toggle();">Professional Services  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                  </b>
+                  <div class="allshow" style="display:none;" id="tab-proServices-content">
+                      <hr class="star-primary">
+                      
+                      <h4>Professional Services</h4>
+                      <h6> Program Committee </h6>
+                      <ul class="clist">
+                        <li> The ACM Web Conference 2022, 2023 </li>
+                        <li> ACM WSDM 2023 </li>
+                        <li> ACM SIGMOD 2023 Demo </li>
+                      </ul>
+                        
+                      <h6>External Reviewer</h6>
+                      <ul class="clist">
+                        <li>VLDB Journal 2022</li>
+                        <li>IEEE Transcations on Knowledge and Data Engineering (TKDE) 2021</li>
+                        <li>ACM CIKM 2020</li>
+                      </ul>
+
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section  name="teaching" id="teaching">
+        <div class="container lead">
+            <div style="text-align: left; margin-top:10px" class="col-md-12">
+                
+                <b class="noshow" style="display:none;" id="tab-3">
+                    <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-teaching-content').toggle();">Professional Services  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <div class="allshow" style="display:none;" id="tab-teaching-content">
+                    <hr class="star-primary">
+                    
+                    <h4>Teaching</h4>
+                    <h6>Bilkent University</h6>
+                    <ul class="clist">
+                      <li> CS353 Introduction to Database Systems</li>
+                      <li> CS281 Computers and Data Organization</li>
+                      <li> CS101 Algorithms and Programming I</li>
+                      <li> CS102 Algorithms and Programming II</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
  
       </div>
@@ -148,7 +200,7 @@
 
     <footer class="footer">
       <div class="container">
-        <span class="text-muted"><i class="fas fa-university"></i> © 2020 Arif Usta.</span>
+        <span class="text-muted"><i class="fas fa-university"></i> © 2022 Arif Usta.</span>
       </div>
     </footer>
 
